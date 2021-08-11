@@ -8,12 +8,12 @@ root.configure(background="red")
 
 
 # pictures
-rockimg = ImageTk.PhotoImage(Image.open("rock.png"))
-paperimg = ImageTk.PhotoImage(Image.open("paper.png"))
-scissorsimg = ImageTk.PhotoImage(Image.open("scissors.png"))
-rockimgcomp = ImageTk.PhotoImage(Image.open("rock.png"))
-paperimgcomp = ImageTk.PhotoImage(Image.open("paper.png"))
-scissorsimgcomp = ImageTk.PhotoImage(Image.open("scissors.png"))
+rockimg = ImageTk.PhotoImage(Image.open("rock.jpeg"))
+paperimg = ImageTk.PhotoImage(Image.open("paper.jpeg"))
+scissorsimg = ImageTk.PhotoImage(Image.open("scissors.jpeg"))
+rockimgcomp = ImageTk.PhotoImage(Image.open("rock.jpeg"))
+paperimgcomp = ImageTk.PhotoImage(Image.open("paper.jpeg"))
+scissorsimgcomp = ImageTk.PhotoImage(Image.open("scissors.jpeg"))
 
 #insert image
 userlabel = Label(root, image=rockimg,bg="red")
