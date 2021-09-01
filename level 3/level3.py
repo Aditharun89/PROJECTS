@@ -7,13 +7,13 @@ data.title('data storage')
 data.geometry("600x600")
 
 
-# creating data base
+# database
 database = sqlite3.connect('address_storage.db')
 c = database.cursor()
 
 
 
-# Function for the database
+#fn for database
 
 def submit():
         database = sqlite3.connect('address_storage.db')
