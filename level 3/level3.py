@@ -3,12 +3,12 @@ import sqlite3
 
 
 data = Tk()
-data.title('data storage')
+data.title('STORAGE')
 data.geometry("600x600")
 
 
 # database
-database = sqlite3.connect('address_storage.db')
+database = sqlite3.connect('details_storage.db')
 c = database.cursor()
 
 
@@ -16,7 +16,7 @@ c = database.cursor()
 #fn for database
 
 def submit():
-        database = sqlite3.connect('address_storage.db')
+        database = sqlite3.connect('details_storage.db')
         c = database.cursor()
 
         c.execute("INSERT INTO address VALUES(:name, :email, :contact)",
@@ -43,7 +43,7 @@ c.execute("""CREATE TABLE address (
 
 
 def que():
-    database = sqlite3.connect('address_storage.db')
+    database = sqlite3.connect('details_storage.db')
     c = database.cursor()
     c.execute("SELECT *,oid FROM address")
     record = c.fetchall()
