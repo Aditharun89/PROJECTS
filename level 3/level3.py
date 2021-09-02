@@ -40,7 +40,7 @@ c.execute("""CREATE TABLE address (
             email text,
             contact integer)""")
 '''
-
+#Query function
 
 def que():
     database = sqlite3.connect('details_storage.db')
